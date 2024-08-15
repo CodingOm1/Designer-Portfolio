@@ -1,0 +1,20 @@
+.navbar{
+    width: 100%;
+    padding: 2rem 12rem;
+    background-color: #1A0B2E;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar_logo{
+    cursor: pointer;
+}
+.navbar_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 7.5rem;
+}
+.navbar_links li {cursor: pointer;}

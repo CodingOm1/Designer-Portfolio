@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Preahvihear&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Poppins;
+  background-color: #11071F;
+}
+.app{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
