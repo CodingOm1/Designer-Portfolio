@@ -42,7 +42,7 @@ const Home = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Hello! I Am <span>Ibrahim Memon</span>
+              Hello! I Am <span>Om Waghmare</span>
             </motion.h3>
           </div>
         </motion.div>
