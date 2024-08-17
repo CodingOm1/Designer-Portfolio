@@ -6,6 +6,12 @@
   font-family: Poppins;
   src: url(./Poppins-Regular.woff);
 }
+
+:root{
+  --primary-font: Preahvihear;
+  --secondary-font: Poppins;
+  --primary-bg: #11071F;
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +25,8 @@ body{
   width: 80%;
   height: 100%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 

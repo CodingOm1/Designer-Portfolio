@@ -1,0 +1,103 @@
+.work-field{
+    width: 100%;
+    max-height: 100vh;
+    position: relative;
+    top: 150px;
+    padding: 1rem 20px;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    position: relative;
+}
+.moreph__circle{
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle at center, rgba(34, 27, 66, 0.799) 10%, transparent 60%);
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+.work-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 15px;
+    color: #fff;
+    gap: 15px;
+    z-index: 2;
+}
+.text-nor{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.workBox{
+    width: 100%;
+    height: 150px;
+    background: transparent;
+    padding: 5px 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(140deg, #130428 7%, #251043 34%, #38126D 57%, #261045 85%, #190634 100%);
+    border: 1px solid #21153353;
+    gap: 20px;
+    box-shadow: -3px -4px 0px #693B93;
+}
+.workBox .img img{
+    width: 100px;
+}
+.workBox .workInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+.workInfo h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+.workInfo p{
+    font-size: 12px;
+    flex-wrap: wrap;
+    max-width: 400px;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+.workInfo button{
+    width: 120px;
+    height: 35px;
+    background: #2C1250;
+    font-size: 0.80rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    color: #fff;
+    outline: none;
+    border: 1px solid #693B93;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 35px 35px 100px #000000;
+}   
+
+.workBox:nth-child(2){
+    background: linear-gradient(140deg, #130428 7%, #251043 34%, #230b45 57%, #261045 85%, #190634 100%);
+    box-shadow: 3px -4px 0px #693B93;
+}
+.workBox:nth-child(3){
+    background: linear-gradient(140deg, #130428 7%, #251043 34%, #261045 85%, #190634 100%);
+    box-shadow: -3px 4px 0px #693B93;
+}
+.workBox:nth-child(4){
+    background: linear-gradient(140deg, #130428 7%, #230e42 57% #382159 34%, #261045 85%, #190634 100%);
+    box-shadow: 3px 4px 0px #693B93;
+}
