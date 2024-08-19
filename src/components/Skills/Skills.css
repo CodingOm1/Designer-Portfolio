@@ -1,0 +1,155 @@
+.skills_Section {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 10rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+.skill-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.skill-text h2,
+h3 {
+  font-weight: 500;
+}
+.skill-text h3 {
+  font-size: 18px;
+}
+.skill-text h2 span {
+  color: #a362ff;
+}
+.skills_icon {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vectors {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.vectors img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.vectors img:nth-child(1) {
+  left: 80px;
+  top: -3px;
+}
+.vectors img:nth-child(2) {
+  left: 30px;
+  top: -3px;
+}
+.vectors img:nth-child(3) {
+  left: 10px;
+  top: -3px;
+}
+.vectors img:nth-child(4) {
+  left: 10px;
+  top: -3px;
+}
+.vectors img:nth-child(5) {
+  left: -10px;
+  top: -3px;
+}
+.vectors img:nth-child(6) {
+  left: -80px;
+  top: -3px;
+}
+
+.attr_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo_ring {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.logo_ring::before {
+  content: "";
+  width: 260px;
+  height: 160px;
+  /* background: radial-gradient(
+    circle at center,
+    #763cac7a 10%,
+    #320f8500 60%
+  ); */
+  background-color: #3e1d6c;
+  filter: blur(90px);
+  border-radius: 50px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-20%, -0%);
+}
+.logo_ring .logo_glow {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(
+    180deg,
+    #301080 0%,
+    #5a20a4 30%,
+    #7840ad 60%,
+    #4d2e9d 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+.logo_glow img {
+  width: 70px;
+  position: relative;
+}
+.ring img {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 200px;
+  transform: translate(-15%, -0%);
+}
+.space_ring {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    gap:0;
+    flex-direction: column;
+}
+.space_ring img{
+    position: absolute;
+}
+.space_ring img:nth-child(1){
+    top: -20px;
+    width: 500px;
+}
+.space_ring img:nth-child(2){
+    top: -10px;
+    width: 600px;
+}
+.space_ring img:nth-child(3){
+    top: 0px;
+    width: 800px;
+}
+
+  

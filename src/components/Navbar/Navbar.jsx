@@ -38,6 +38,7 @@ const Navbar = () => {
         }}
         className="navbar_logo"
       >
+        {/* <img src={assets.VALogo} alt="Error to load logo" width={'90px'}/> */}
         <img src={assets.Logo} alt="Error to load logo" />
       </motion.div>
       <motion.ul
