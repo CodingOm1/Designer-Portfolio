@@ -152,4 +152,19 @@ h3 {
     width: 800px;
 }
 
-  
+  @media (max-width: 660px) {
+    .skills_icon{
+      scale: 0.76;
+      transform: scale(0.76);
+    }    
+    .attr_user{
+      margin-top: -15vw;
+      margin-bottom: 2rem;
+    }
+  }
+  @media (max-width: 339px) {
+    .skills_icon{
+      scale: 0.66;
+      transform: scale(0.76);
+    }    
+  }
