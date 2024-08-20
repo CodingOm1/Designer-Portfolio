@@ -287,7 +287,7 @@
     font-size: 15px;
   }  
   .workBox p{
-    font-size: 8px;
+    display: none;
   }  .workBox button{
     width: 80px;
     height: 25px;
