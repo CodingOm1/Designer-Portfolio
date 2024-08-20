@@ -73,7 +73,7 @@
 
     .footer p {
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     .footer h2 {
@@ -81,7 +81,7 @@
     }
 
     .footer h3 {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     #svg_icon {
