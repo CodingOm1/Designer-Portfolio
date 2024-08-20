@@ -107,3 +107,81 @@
 }#open_site_svg:hover{
     color: #9857D3;
 }
+
+
+
+/* Media Query for screens smaller than 1115px */
+@media (max-width: 1115px) {
+    .project_section {
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .project_box {
+        flex-direction: column; /* Stack items vertically */
+        padding: 15px; /* Adjust padding */       
+    }
+
+    .project_box::before {
+        width: 200px; /* Reduce size */
+        height: 150px; /* Reduce size */
+        filter: blur(50px); /* Reduce blur effect */
+    }
+
+    .project_img {
+        display: none; /* Hide images */
+        
+    }
+
+    .project_info .glass_text {
+        width: 90%; /* Make glass text container responsive */
+        padding: 8px 12px; /* Adjust padding */
+    }
+
+    .project_info h2 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .project_info p {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .glass_moreph {
+        width: 150px; /* Adjust size */
+        height: 150px;
+        bottom: 80px; /* Adjust position */
+    }
+}
+
+/* Media Query for screens smaller than 638px */
+@media (max-width: 638px) {
+    .project_section {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .project_box {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .project_img {
+        display: none; /* Hide images */
+    }
+
+    .project_info .glass_text {
+        width: 100%; /* Make glass text container full width */
+        padding: 6px 10px; /* Adjust padding */
+    }
+
+    .project_info h2 {
+        font-size: 20px; /* Further reduce font size */
+    }
+
+    .project_info p {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .glass_moreph {
+        width: 120px; /* Further adjust size */
+        height: 120px;
+        bottom: 60px; /* Further adjust position */
+    }
+}

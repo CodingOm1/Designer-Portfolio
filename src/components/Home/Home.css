@@ -8,18 +8,22 @@
   padding-top: 15rem;
   padding-bottom: 30px;
 }
+
 .hero .me {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
 }
+
 .me .left-hero {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
+
 .me .left-hero .meImg {
   width: 220px;
   position: relative;
@@ -31,15 +35,16 @@
   right: -80px;
   transform: translate(50%, -50%);
   display: flex;
-  align-items: self-start;
+  align-items: flex-start;
   justify-content: flex-start;
 }
+
 .me .left-hero .name h3 {
   position: relative;
-  text-wrap: nowrap;
   font-weight: 500;
   margin-top: 20px;
 }
+
 .me .left-hero .name h3 span {
   color: #7127ba;
 }
@@ -51,12 +56,14 @@
   justify-content: flex-start;
   font-family: Preahvihear;
 }
+
 .right-hero h4 {
   font-size: 1rem;
   font-weight: 500;
   margin-bottom: -5px;
   margin-top: -15px;
 }
+
 .right-hero h2 {
   font-size: 3rem;
   font-weight: 500;
@@ -79,38 +86,137 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 120%; /* Adjust the size to fit the text */
+  width: 120%;
   height: 120%;
   transform: translate(-50%, -50%);
   background: url("../../assets/Ellipse 5.png") no-repeat center;
   background-size: contain;
   z-index: -1;
 }
-.right-hero h5{
-    font-weight: 500;
-    font-size: 1rem;
+
+.right-hero h5 {
+  font-weight: 500;
+  font-size: 1rem;
 }
 
-.AboutMe{
-    font-family: Preahvihear;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    gap: 25px;
-    color: #fff;
-}
-.myJob, .myInfo{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    max-width: 600px;
+.AboutMe {
+  font-family: Preahvihear;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 25px;
+  color: #fff;
 }
 
-.myJob h2, h4{
-    display: flex;
+.myJob, .myInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.myJob h2, h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  gap: 10px;
+}
+@media (max-width: 638px) {
+  .myJob h4 img{
+    display: none;
+  }
+  
+}
+/* Media Query for screens smaller than 680px */
+@media (max-width: 680px) {
+  #arrow {
+    display: none; /* Hide the arrow image */
+  }
+  .hero {
+    padding-top: 10rem;
+    height: auto;
+  }
+
+  .me .left-hero {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    gap: 10px;
+    text-align: center;
+  }
+
+  .me .left-hero .name {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .me .left-hero .meImg {
+    width: 180px;
+  }
+
+  .right-hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-hero h2 {
+    width: auto;
+    font-size: 2rem;
+  }
+
+  .highlighted-cover {
+    font-size: 2rem;
+  }
+
+  .myJob h2, h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Query for screens smaller than 438px */
+@media (max-width: 438px) {
+  .hero {
+    padding-top: 8rem;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .me .left-hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .me .left-hero .meImg {
+    width: 150px;
+  }
+
+  .me .left-hero .name {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+
+  .right-hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .right-hero h4 {
+    font-size: 0.9rem;
+  }
+
+  .right-hero h2 {
+    font-size: 1.8rem;
+    width: auto;
+  }
+
+  .highlighted-cover {
+    font-size: 1.8rem;
+  }
+
+  .myJob h2, h4 {
+    font-size: 1rem;
+  }
+
+
 }

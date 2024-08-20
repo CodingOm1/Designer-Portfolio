@@ -31,6 +31,7 @@ const Home = () => {
           />
           <div className="name">
             <motion.img 
+              id="arrow"
               src={assets.arrow} 
               alt="Error to load arrow" 
               initial={{ rotate: -90, opacity: 0 }}

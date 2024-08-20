@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -20,6 +21,10 @@ const Navbar = () => {
       });
     }
   }, [controls, inView]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <motion.div
@@ -38,11 +43,15 @@ const Navbar = () => {
         }}
         className="navbar_logo"
       >
-        {/* <img src={assets.VALogo} alt="Error to load logo" width={'90px'}/> */}
         <img src={assets.Logo} alt="Error to load logo" />
       </motion.div>
+      <div className="navbar_hamburger" onClick={toggleMenu}>
+        <div className={`line ${isMenuOpen ? "line1" : ""}`}></div>
+        <div className={`line ${isMenuOpen ? "line2" : ""}`}></div>
+        <div className={`line ${isMenuOpen ? "line3" : ""}`}></div>
+      </div>
       <motion.ul
-        className="navbar_links"
+        className={`navbar_links ${isMenuOpen ? "active" : ""}`}
         initial={{ opacity: 0, y: -20 }}
         animate={controls}
         transition={{ duration: 0.8, ease: "easeOut", staggerChildren: 0.2 }}
