@@ -13,7 +13,7 @@ function Footer() {
         improving people's lives through accessible design. or have a project in
         mind?
       </p>
-      <h3>Let's connect. <span>ibrhaimmemon930@gmail.com</span></h3>
+      <h3>Let's connect. <span>codewithom405@gmail.com</span></h3>
       <div className="flex">
         <FaInstagram id="svg_icon"  />
         <CiFacebook id="svg_icon" />
